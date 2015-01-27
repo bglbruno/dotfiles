@@ -6,6 +6,7 @@ call vundle#begin('~/.vim/bundle/plugins')
 
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-rails'
 Plugin 'kien/ctrlp.vim'
@@ -13,6 +14,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'thoughtbot/vim-rspec'
 Plugin 'slim-template/vim-slim'
 Plugin 'ervandew/supertab'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'airblade/vim-gitgutter'
 Plugin 'gregsexton/gitv'
@@ -25,8 +27,6 @@ set encoding=utf-8
 set showcmd                     " display incomplete commands
 set number
 
-set laststatus=2
-
 filetype plugin indent on       " load file type plugins + indentation
  
 "" Whitespace
@@ -34,7 +34,9 @@ set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
 set backspace=indent,eol,start  " backspace through everything in insert mode
- 
+
+set laststatus=2
+
 "" Searching
 set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
