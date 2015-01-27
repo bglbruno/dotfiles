@@ -3,7 +3,7 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 
 call vundle#begin('~/.vim/bundle/plugins')
-  
+
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-rails'
@@ -42,3 +42,13 @@ map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
 map <Leader>a :call RunAllSpecs()<CR>
+
+" Easier split navigations
+" We can use different key mappings 
+" for easy navigation between splits 
+" to save a keystroke. 
+" So instead of ctrl-w then j, it’s just ctrl-j:
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
