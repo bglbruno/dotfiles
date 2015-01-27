@@ -5,14 +5,17 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin('~/.vim/bundle/plugins')
 
 Plugin 'gmarik/Vundle.vim'
+
 Plugin 'tpope/vim-fugitive.git'
 Plugin 'tpope/vim-rails'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'thoughtbot/vim-rspec'
-Plugin 'jgdavey/tslime.vim'
 Plugin 'slim-template/vim-slim'
 Plugin 'ervandew/supertab'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'airblade/vim-gitgutter'
+Plugin 'gregsexton/gitv'
 
 call vundle#end()            " required
 
@@ -20,6 +23,10 @@ set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
 set showcmd                     " display incomplete commands
+set number
+
+set laststatus=2
+
 filetype plugin indent on       " load file type plugins + indentation
  
 "" Whitespace
