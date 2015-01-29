@@ -20,6 +20,7 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'airblade/vim-gitgutter'
 Plugin 'gregsexton/gitv'
+Plugin 'ecomba/vim-ruby-refactoring'
 
 call vundle#end()            " required
 
